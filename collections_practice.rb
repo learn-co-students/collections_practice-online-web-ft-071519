@@ -38,3 +38,32 @@ def kesha_maker(arr)
     element = element_arr.join('')
   end
 end
+
+def find_a(arr)
+  arr.select do |element|
+    element.start_with?("a")
+  end
+end
+
+def sum_array(arr)
+  # arr.sum
+  arr.inject { |sum, n| sum + n }
+end
+
+def add_s(arr)
+  arr.each_with_index.collect do |element, index| 
+    if index != 1
+      element = element + "s"
+    else
+      element
+    end
+  end
+end
+
+
+
+
+
+
+
+
