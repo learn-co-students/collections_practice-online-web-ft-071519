@@ -46,7 +46,7 @@ end
 def add_s(irray)
   
   irray.collect do |i|
-    if i != "feet"
+    if i != irray[1]
       i+"s"
     else
       i
